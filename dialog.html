@@ -31,6 +31,7 @@
           try {
             ui = await UiExtension.register();
             const options = await ui.dialog.options();
+            console.log(options);
             const bynderContainer = document.getElementById('bynder-config');
 
             bynderContainer.innerHTML = `<div id="bynder-compactview"
